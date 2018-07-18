@@ -26,6 +26,12 @@ namespace PdfSharpTest
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string filename = String.Format("{0}_tempfile.pdf", Guid.NewGuid().ToString("D").ToUpper());
 
+            PdfImage.Graphics(filename);
+
+        }
     }
 }

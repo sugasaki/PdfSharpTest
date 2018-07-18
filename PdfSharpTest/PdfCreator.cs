@@ -36,12 +36,15 @@ namespace PdfSharpTest
             gfx.DrawString("Hello, World!", font, XBrushes.Black,
               new XRect(0, 0, page.Width, page.Height),
               XStringFormats.Center);
-
+            
             // Save the document...
             document.Save(filename);
 
 
         }
+
+
+
 
 
     }
